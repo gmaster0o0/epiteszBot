@@ -1,9 +1,12 @@
+const StatController = require('../controllers/StatController');
+
 const setLevel = (user, level) => {
   return `${user.username} new level: ${level}`;
 };
 
 const getLevel = (user) => {
-  return `${user} current level: 5`;
+  const level = StatController.getUserLevel(user.id);
+  return `${user} current level: ${level}`;
 };
 
 module.exports = {
