@@ -20,7 +20,8 @@
   "homepage": "https://github.com/gmaster0o0/epiteszBot#readme",
   "dependencies": {
     "discord.js": "^12.2.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "quick.db": "^7.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",

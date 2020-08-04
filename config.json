@@ -1,3 +1,4 @@
 {
-  "prefix": "!"
+  "prefix": "!",
+  "spamCooldown": "10"
 }

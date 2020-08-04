@@ -5,6 +5,7 @@ require('dotenv').config();
 const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix } = require('./config.json');
+const statController = require('./controllers/StatController');
 
 const { TOKEN } = process.env;
 
@@ -26,7 +27,7 @@ client.on('message', (message) => {
   if (message.author.bot) return;
 
   if (!message.content.startsWith(prefix)) {
-    return console.log('incomming text');
+    return statController.checkMessage(message);
   }
 
   const args = message.content.slice(prefix.length).trim().split(/ +/);
